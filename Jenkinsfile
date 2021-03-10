@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Example Build') {
-            agent { label 'Master' }
+            agent { label 'master' }
             steps {
                 sh 'echo "test"'
             }
