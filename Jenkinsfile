@@ -6,6 +6,8 @@ pipeline {
             agent { label 'master' }
             steps {
                 sh 'echo "test"'
+                sh 'python --version'
+                sh 'python3 pythonscripthello.py'
             }
         }
     }
