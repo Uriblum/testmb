@@ -5,9 +5,9 @@ pipeline {
         stage('Example Build') {
             agent { label 'master' }
             steps {
-                sh 'python pythonscripthello.py'
+                sh 'python pythonscriptweather.py'
                 sh 'sleep 30'
-                sh 'python pythonscripthello.py'
+                sh 'python pythonscriptweather.py'
             }
         }
     }
